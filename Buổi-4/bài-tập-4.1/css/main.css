@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    height: 150px;
+}
+.h {
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.nav {
+    background-color: crimson;
+}
+.foot {
+    background-color: darkslateblue;
+}
+.index {
+    margin: 5px auto;
+    background-color: yellow;
+}
+.page-content {
+    background-color: green;
+    margin: 5px 0;
+}

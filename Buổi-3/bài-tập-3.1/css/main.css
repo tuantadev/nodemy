@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.img {
+  background-image: url("../img/bai1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 300px;
+  border: solid;
+}
+.body {
+  padding-top: 250px;
+  width: 300px;
+  height: fit-content;
+}
+
+.giamgia {
+  background-color: orange;
+  width: fit-content;
+}
+.giagoc {
+  text-decoration: line-through;
+}
+.giaban {
+  color: red;
+}

@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+.product{
+    width: 400px;
+    border: 1px solid black;
+}
+.price{
+    color:red;
+}
+.origin-price{
+    text-decoration: line-through ;
+}
