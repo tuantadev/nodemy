@@ -50,7 +50,7 @@ console.log(`tổng 3 phần tử cuối = ${tong}`);
 // * Tìm xem trong array có phần tử nào là số 5 không?
 var i = false;
 array.forEach(element =>{
-    element === 5 ? i = true  : i;  
+    element === 5 ? i = !i  : i;  
 })
 i == true ?  console.log(`Mảng array có phần tử 5`) :  console.log(`Mảng array ko có phần tử 5`);;
 // * Đếm số phần tử = 8 trong mảng;
