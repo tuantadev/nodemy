@@ -1,28 +1,24 @@
-// Bài 1: cho array = [1,5,7,8,9,15,8]
 var array = [1,5,7,8,9,15,8];
+console.log(`Mảng array = ${array}`);
 // * in ra các số chẵn của mảng
-array.forEach(element => {
-    if(element % 2 == 0){
-        console.log(`Số chẵn của mảng là = ${element}`);
-    }
-});
+var arrC = [];
+array.forEach(element => element % 2 == 0 ?  arrC.push(element) : []);
+console.log(`Số chẵn của mảng ${arrC}`);
+var arrA = array.filter((item)=> item % 2 == 0)
+console.log(`Số chẵn của mảng ${arrA}`);
 // * in ra các số lẻ của mảng
-array.forEach(element => {
-    if(element % 2 != 0 ){
-        console.log(`Số lẽ của mảng là = ${element}`)
-    }
-});
+var arrL = [];
+array.forEach(element => element % 2 != 0 ? arrL.push(element) : []);
+ console.log(`Số lẻ của mảng ${arrL}`)
+ var arrB = array.filter((item) => item % 2 !=0 );
+ console.log(`Số lẻ của mảng ${arrB}`)
 // * in ra các số lớn hơn hoặc bằng 5 của mảng
-array.forEach( element => {
-    if(element >= 5){
-        console.log(`Số lớn hơn hoặc bằng 5 = ${element}`)
-    }
-})
+var arrA =[];
+array.forEach( element => element >= 5 ? arrA.push(element) : []);
+console.log(`Số lớn hơn hoặc bằng 5 = ${arrA}`)
+var arrC = array.filter((item) => item >= 5 );
+console.log(`Số lớn hơn hoặc bằng 5 = ${arrC}`)
 // * Cộng tổng các số chia hết cho 5 của mảng
-arrayAfter = [];
-array.forEach(element =>{
-
-})
 // * Tìm ra tích 3 số đầu của mảng array
 var count = 0;
 var  tich = 1;
@@ -33,33 +29,23 @@ array.forEach(element =>{
     }
 })
 console.log(`tích 3 số đầu của mảng array = ${tich}`);
-
 // * Tính tổng 3 phần tử cuối của mảng
 var tong = 0;
-var j = 1;
-for (var i = 0 ; i < array.length  ; i++)
+for (var i = array.length -1 ; i >= array.length-3  ; i--)
 { 
-     if (i <  3 ){
-        var  temp = array.length - j;
-        tong += array[temp];
-        j++;
-     }
-   
+       tong += array[i];
 }
 console.log(`tổng 3 phần tử cuối = ${tong}`);
 // * Tìm xem trong array có phần tử nào là số 5 không?
 var i = false;
-array.forEach(element =>{
-    element === 5 ? i = !i  : i;  
-})
-i == true ?  console.log(`Mảng array có phần tử 5`) :  console.log(`Mảng array ko có phần tử 5`);;
+array.forEach(element => element === 5 ? i = true  : i)
+i == true ?  console.log(`Mảng array có phần tử 5`) :  console.log(`Mảng array ko có phần tử 5`);
+var arrD = array.find((item) => item == 5);
+arrD !== '' ?  console.log(`Mảng array có phần tử 5`) :  console.log(`Mảng array ko có phần tử 5`);
 // * Đếm số phần tử = 8 trong mảng;
 var count = 0;
-array.forEach(element => {
-    element === 8 ? count++ : count;
-})
+array.forEach(element => element === 8 ? count++ : count)
 console.log(`Số phần tử 8 trong mảng = ${count} `)
-
 // Chủ đề Object
 // Bài 1: 
 // var obj={
@@ -81,9 +67,8 @@ var car = {
     gia   : '300000 USD', 
     xuatXu:'Đức'
 }
-for(var i in car){
-    console.log(`obj car source = ${car[i]}`);
-}
+    console.log(`obj car source = ${car}`);
+
 // Bài 3: Bổ sung thêm các thuộc tính khác
 //     a) Thêm 1 thuộc tính màu sắc của xe: ‘Đen’
 car.color = 'Đen';
